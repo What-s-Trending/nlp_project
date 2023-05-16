@@ -6,7 +6,7 @@ import unicodedata
 import nltk
 from nltk.corpus import stopwords
 
-
+import acquire
 
 
 def basic_clean(some_string):
