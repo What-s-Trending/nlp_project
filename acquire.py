@@ -90,7 +90,6 @@ def scrape_github_data() -> pd.DataFrame:
         time.sleep(12)  # spread out the requests over 20 minutes
     return pd.DataFrame(data)
 
-
 if __name__ == "__main__":
     data = scrape_github_data()
     data.to_csv("data.csv", index=False)
