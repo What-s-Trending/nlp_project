@@ -25,9 +25,9 @@ The goal of this project is to predict a repositories programming language. We p
 
 - Planning - Steps required to replicate our process is presented in the readme file.
 
-- Acquisition - 
+- Acquisition - Our initial data gathering came from webscraping trending repositories from Github and pulling text data from the repositories readme. We acquired at least 100 trending repos and their readme text.
 
-- Preparation - 
+- Preparation - The raw text data of the readme was cleaned by removing irrelevant information, this included HTML tags, special characters, punctuation, and extra whitespaces. The cleaned readme contents were tokenized into individual words and to reduce word variations and standardize the text, text normalization was applied.TF-IDF was used to calculate the importance of each word in the readme and last we split the data for exploration and modeling. 
 
 - Exploration - We are looking to gain insights into the programming language distribution in GitHub repositories and to identify any patterns or trends related to programming languages based on readme text. This information can be useful for developers and organizations to prioritize their language learning or investment decisions.
 
@@ -52,5 +52,18 @@ The goal of this project is to predict a repositories programming language. We p
 
 # Steps to Reproduce
 
-To recreate our findings, you will need the nlp_project.ipynb file along with all .py files from the GitHub repository stored in the same directory on your device. The dataset file is provided in the repository as well.
+To recreate our findings, you will need to use the github_data.csv file, this data was pulled from github on 5/16/17. Using the acquire function will pull the latest data from github and may invalidate the exploration section and model performance of the final notebook. This is expressly noted in the final_report.ipynb.
+
+First Clone the repo to your device.
+
+To reproduce our findings run the final_report notebook sequentially as is.
+
+To get the latest data from github:
+- Read and follow directions to edit the env.py file with your github_token and github_username
+- Run the commented out function call and import from cell 2, #df=acquire.scrape_github_data()
+- Comment out or skip the cell 3 
+- Run the rest of the notebook sequentially.
+
+
+
  
