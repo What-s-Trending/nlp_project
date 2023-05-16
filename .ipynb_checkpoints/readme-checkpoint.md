@@ -25,10 +25,9 @@ The goal of this project is to predict a repositories programming language. We p
 
 - Planning - Steps required to replicate our process is presented in the readme file.
 
-- Acquisition - Our initial data gathering came from web-scraping trending repositories from Github and pulling text data from the repositories readme. We acquired at least 100 trending repos and their readme text.
+- Acquisition - 
 
-- Preparation - The raw text data of the readme was cleaned by removing irrelevant information, this included HTML tags, special characters, punctuation, and extra whitespaces. The cleaned readme contents were tokenized into individual words and to reduce word variations and standardize the text, text normalization was applied.TF-IDF was used to calculate the importance of each word in the readme and last we split the data for exploration and modeling. 
-
+- Preparation - 
 
 - Exploration - We are looking to gain insights into the programming language distribution in GitHub repositories and to identify any patterns or trends related to programming languages based on readme text. This information can be useful for developers and organizations to prioritize their language learning or investment decisions.
 
