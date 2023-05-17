@@ -73,10 +73,10 @@ Summary
 To recreate our findings, you will need to use the github_data.csv file, this data was pulled from github on 5/16/17. Using the acquire function will pull the latest data from github and may invalidate the exploration section and model performance of the final notebook. This is expressly noted in the final_report.ipynb.
 
 Dependencies:
--wordcloud
--nltk
--numpy
--pandas
+- wordcloud
+- nltk
+- numpy
+- pandas
 
 to install these packages use pip install 'package name'
 
