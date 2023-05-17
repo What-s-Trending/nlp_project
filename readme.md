@@ -53,6 +53,12 @@ The goal of this project is to predict a repositories programming language. We p
 # Conclusions and Recommendations
 
 Conclusions
+- all models reached a training accuracy score of 100%
+ - this isn't necessarily an indication that the model is over fit, since all the models reached the score
+ - this is likely due to three factors:
+     - balanced data
+     - diverse word choice in readmes
+     - test set size compared to validation and training
 - Droping the repo without a README likely had no effect on performance
 - stemming and lemmatization lead to better performance
 - The Decision Tree model performed the best with a final test accuracy of 58%
