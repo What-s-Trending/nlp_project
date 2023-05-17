@@ -128,24 +128,24 @@ def log_reg_model(df, readme):
 
 
 
-def create_models_df(readme, model, val_accuracy, test_accuracy):
+def create_models_df(readme, model, train_accuracy, validate_accuracy):
     metric_df = pd.DataFrame(data=[
         {'Readme': readme,
          'Model': model,
-         'validate_accuracy': val_accuracy,
-         'test_accuracy': test_accuracy,
+         'train_accuracy': train_accuracy,
+         'validate_accuracy': validate_accuracy,
     }]
     )
     return metric_df
 
 
 
-def add_to_models_df(model, readme, metric_df, val_accuracy, test_accuracy):
+def add_to_models_df(model, readme, metric_df, train_accuracy, validate_accuracy):
     metric_df = metric_df.append(
         {'Readme': readme,
          'Model': model,
-         'validate_accuracy': val_accuracy,
-         'test_accuracy': test_accuracy,}, ignore_index=True)
+         'train_accuracy': train_accuracy,
+         'validate_accuracy': validate_accuracy}, ignore_index=True)
     return metric_df
 
 
