@@ -72,13 +72,21 @@ Summary
 
 To recreate our findings, you will need to use the github_data.csv file, this data was pulled from github on 5/16/17. Using the acquire function will pull the latest data from github and may invalidate the exploration section and model performance of the final notebook. This is expressly noted in the final_report.ipynb.
 
-First Clone the repo to your device.
+Dependencies:
+-wordcloud
+-nltk
+-numpy
+-pandas
 
-To reproduce our findings run the final_report notebook sequentially as is.
+to install these packages use pip install 'package name'
+
+After dependencies have been satisfied, clone the repo to your device.
+
+To reproduce our findings run the final_report notebook sequentially as is, this will pull the cached data we saved.
 
 To get the latest data from github:
 - Read and follow directions to edit the env.py file with your github_token and github_username
-- Run the commented out function call and import from cell 2, #df=acquire.scrape_github_data()
+- Run the commented out function call and import from cell 2, #import acquire #df=acquire.scrape_github_data()
 - Comment out or skip the cell 3 
 - Run the rest of the notebook sequentially.
 
