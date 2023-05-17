@@ -118,12 +118,12 @@ def log_reg_model(df, readme):
     y_val_pred = logreg_model.predict(X_val_vec)
     # Evaluate the model on the validation set
     val_accuracy = accuracy_score(y_val, y_val_pred)
-    print('Validation Accuracy:', val_accuracy)
     # Make predictions on the test set
     y_test_pred = logreg_model.predict(X_test_vec)
     # Evaluate the model on the test set
     test_accuracy = accuracy_score(y_test, y_test_pred)
-    print('Test Accuracy:', test_accuracy)
+    print('Train Accuracy:', test_accuracy)
+    print('Validation Accuracy:', val_accuracy)
     return val_accuracy, test_accuracy
 
 
